@@ -22,53 +22,42 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="fab fa-instagram" alt="" width="30" height="24" class="d-inline-block align-text-top"/> Instagram
+            <img src="fab fa-instagram" 
+            alt="" 
+            width="30" 
+            height="24" 
+            class="d-inline-block align-text-top"/> Instagram
           </a>
         
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
+          
+          <button class="liveDemoModal">
+            <!-- button trigger live demo modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
 
-          <div class="collapse" id="navbarToggleExternalContent">
-            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li> -->
-            <div class="p-4">
-
-            </div>
-
-
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul> -->
-          </div>
-
-            <button class="">
-              <!-- button trigger live demo modal -->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Create a new post
-              </button>
-
-              <!--Modal  -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <!--Modal  -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       Add the caption of your post here...
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
-                      <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success">Publish</button>
+                      <div class="modalButtons align-items-center>
+                        <div class="iconButtons">
+                          <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
+                          <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
+                        </div>
+                        <div class="dismissButtons">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                      </div>  
                     </div>
                   </div>
                 </div>
