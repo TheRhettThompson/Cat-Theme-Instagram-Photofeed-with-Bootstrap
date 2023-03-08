@@ -8,44 +8,38 @@
   <title>Cat Instagram Bootstrap</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <script src="https://kit.fontawesome.com/7fe33c6696.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <h1>This is the Instagram Bootstrap project that I will submit today</h1>
+  <h1>Cat Lady Theme Instagram</h1>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
   <div class="container-md border">CONTAINER
 
-    
-    <div class="container">
+
+    <div class="container navBar">
       <!-- THIS IS FOR THE NAV BAR -->
-        <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <button class='btn btn-success me-md-2' type="button">Create a new post</button> THIS LINE IS DONE
-          <button class='btn btn-secondary' type='button'>Dropdown icon</button>
+          
         </div> -->
 
-      
-                  <!-- <button class='btn btn-success me-md-2' type="button">Create a new post</button> -->
-                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Log out</a></li>
-                  </ul> -->
-               
-            <!-- </div>
-          </div>
-        </nav> -->
-      <!-- </div> -->
+
+     
+
+     
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="fa-brands fa-instagram" alt="" width="50" height="30" />
+          </a>Instagram</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -54,28 +48,57 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
+            </ul>
+
+            <button class="d-flex">
+              <!-- button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+              </button>
+
+              <!--Modal  -->
+              <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+
+
+              <!-- Dropdown begins here -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
+                <button class="btn btn-secondary" type="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-sharp fa-regular fa-gear"></i>
+                </button>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item logOut" href="#">Logout</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+              <!-- Dropdown ends here -->
+
+            </button>
           </div>
         </div>
-      </nav> 
+      </nav>
 
 
 
@@ -91,16 +114,13 @@
       <div class="card-group">
         <div class="row align-items-center gx-1 gy-3">
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/219/416/300/">
+            <img src="https://picsum.photos/id/219/416/300/">
           </div>
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/106/416/300/">
+            <img src="https://picsum.photos/id/106/416/300/">
           </div>
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/1074/416/300/">
+            <img src="https://picsum.photos/id/1074/416/300/">
           </div>
         </div>
       </div>
@@ -110,16 +130,13 @@
       <div class="card-group">
         <div class="row align-items-center gx-1 gy-3">
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/360/416/300/">
+            <img src="https://picsum.photos/id/360/416/300/">
           </div>
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/40/416/300/">
+            <img src="https://picsum.photos/id/225/416/300/">
           </div>
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/152/416/300/">
+            <img src="https://picsum.photos/id/152/416/300/">
           </div>
         </div>
       </div>
@@ -128,16 +145,13 @@
       <div class="card-group">
         <div class="row align-items-center gx-1 gy-3">
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/593/416/300/">
+            <img src="https://picsum.photos/id/593/416/300/">
           </div>
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/82/416/300/">
+            <img src="https://picsum.photos/id/82/416/300/">
           </div>
           <div class="col-md-4">
-            <img
-              src="https://picsum.photos/id/225/416/300/">
+            <img src="https://picsum.photos/id/40/416/300/">
           </div>
         </div>
       </div>
