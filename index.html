@@ -35,7 +35,6 @@
         <!-- This is the container for the modal -->
         <button id="liveDemoModal">
           <!-- button trigger live demo modal -->
-            
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Create a new post
             </button>
@@ -52,17 +51,23 @@
                   <div class="modal-body">
                     Add the caption of your post here...
                   </div>
+
+                  <!-- separate container for camera and map icons -->               
+                  <div class="container">
+                    <div  id="iconButtons">
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fas fa-camera"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- camera and map icons end here -->
+
                   <div class="modal-footer">
-                    <div class="modalButtons align-items-center>
-                        <div class=" iconButtons">
-                      <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
-                      <button type="button" class="btn btn-outline-secondary"><i
-                          class="fas fa-map-marker-alt"></i></button>
-                    </div>
-                    <div class="dismissButtons">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success">Publish</button>
-                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
                   </div>
                 </div>
               </div>
@@ -87,50 +92,22 @@
         </li>
         <!-- Dropdown ends here -->
       </nav>
-
-        
-      <!--This is the container for the navbar tabs: grid and vertical icons  -->
-      <div id="navBarGridVertical">
-         <!-- Nav centered tabs begins here -->
-         <ul class="nav justify-content-center">
-          <!-- 1st Active will be grid -->
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active<i class="fas fa-th" ></i></a>
-          </li>
-          <!-- 2nd Link tab will be block -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link<i class="fas fa-stop"></i></a>
-          </li>
-      </div>    
-         
-            
-
-
-
-
-
-
-
-
-
-
      
-            
 
-                
-              
- 
-            
+      <!-- this begins nav tab bootstrap javascript plugin -->
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="true"><i class="fas fa-th" ></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-solidBlock-tab" data-bs-toggle="pill" data-bs-target="#pills-solidBlock" type="button" role="tab" aria-controls="pills-solidBlock" aria-selected="false"><i class="fas fa-stop"></i></button>
+        </li> 
+      </ul>
 
-
-        
-
-        
-        
-      </nav> 
-      
-       <!-- this is the container of the grid -->
-       <div class="gridPhotoContainer">
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab" tabindex="0">
+           <!-- this is the container of the grid -->
+      <div class="gridPhotoContainer">
         <!-- THIS BEGINS THE GRID OF PHOTOS , ROW 1 OF 3 -->
         <div class="card-group">
           <div class="row align-items-center gx-1 gy-3">
@@ -176,90 +153,75 @@
           </div>
         </div>
       
-      
-      
+           
       </div>
-      
-      <!-- THIS IS FOR THE VERTICAL LINE OF CARDS -->
+        </div>
+
+        
+        <div class="tab-pane fade" id="pills-solidBlock" role="tabpanel" aria-labelledby="pills-solidBlock-tab" tabindex="0">
+            <!-- THIS IS FOR THE VERTICAL LINE OF CARDS -->
       <!-- THIS IS THE FIRST CARD -->
-      <div class="container my-5 ">
-          <div class="row ">
-            <div class="col-4">
-              <div class="card">
-                <h6 class='card-header text-end'>08/26</h6>
-                <h5 class="card-header">My Cat Spark!</h5>
-                <img
-                  src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2xkJTIwbGFkeSUyMHdpdGglMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60/"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6 class="card-likes">204 likes</h6>
-                  <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
-                </div>
+      <div class="container my-5">
+        <div class="row ">
+          <div class="col-4">
+            <div class="card">
+              <h6 class='card-header text-end'>08/26</h6>
+              <h5 class="card-header">My Cat Spark!</h5>
+              <img
+                src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2xkJTIwbGFkeSUyMHdpdGglMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60/"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-likes">204 likes</h6>
+                <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- THIS IS THE SECOND CARD  -->
-          <div class="row ">
-            <div class="col-4">
-              <div class="card">
-                <h6 class='card-header text-end'>4/09</h6>
-                <h5 class="card-header">The greatness of Croatia</h5>
-                <img
-                  src="https://images.unsplash.com/photo-1575468255212-97dcce0e1306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8b2xkJTIwbGFkeSUyMHdpdGglMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6 class="card-likes">2845 likes</h6>
-                  <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
-                </div>
+        <!-- THIS IS THE SECOND CARD  -->
+        <div class="row ">
+          <div class="col-4">
+            <div class="card">
+              <h6 class='card-header text-end'>4/09</h6>
+              <h5 class="card-header">The greatness of Croatia</h5>
+              <img
+                src="https://images.unsplash.com/photo-1575468255212-97dcce0e1306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8b2xkJTIwbGFkeSUyMHdpdGglMjBjYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-likes">2845 likes</h6>
+                <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- THIS IS THE THIRD CARD  -->
-          <div class="row ">
-            <div class="col-4">
-              <div class="card">
-                <h6 class='card-header text-end'>6/10</h6>
-                <h5 class="card-header">AMAZING goal by Cristiano!</h5>
-                <img
-                  src="https://images.unsplash.com/photo-1571988840298-3b5301d5109b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ3fHxvbGQlMjBsYWR5JTIwd2l0aCUyMGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                  class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h6 class="card-likes">320 likes</h6>
-                  <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
-                </div>
+        <!-- THIS IS THE THIRD CARD  -->
+        <div class="row ">
+          <div class="col-4">
+            <div class="card">
+              <h6 class='card-header text-end'>6/10</h6>
+              <h5 class="card-header">AMAZING goal by Cristiano!</h5>
+              <img
+                src="https://images.unsplash.com/photo-1571988840298-3b5301d5109b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjQ3fHxvbGQlMjBsYWR5JTIwd2l0aCUyMGNhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-likes">320 likes</h6>
+                <p class="card-text">This is an example of a very good photo that you can post on Instagram.</p>
               </div>
             </div>
           </div>
+        </div>
+    </div>
+    <!-- end of line of cards -->
+        </div>
+    
       </div>
-      <!-- end of line of cards -->
-
+      <!-- this ends nav tab bootstrap javascript plugin -->
+       
 
     </div>
   </div>
-  
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-
-
-
-  </div>
-  </div>
+    
 </body>
 
 </html>
