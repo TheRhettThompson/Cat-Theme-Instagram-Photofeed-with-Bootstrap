@@ -12,8 +12,7 @@
 </head>
 
 <body>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+ 
   <div class="container-md border">
     <h1><i class="fas fa-cat"></i> Cat Lady Theme Instagram with Bootstrap</h1>
 
@@ -22,7 +21,7 @@
     <!-- This is Navbar with Instagram, Create post, and Dropdown Cog -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand d-flex" href="#">
             <!-- <img src="fab fa-instagram" alt="" width="30" height="24" class="d-inline-block align-text-top" />  -->
             <i class="fab fa-instagram" 
             alt="" 
@@ -33,9 +32,9 @@
         </div>
 
         <!-- This is the container for the modal -->
-        <button id="liveDemoModal">
+        <div id="liveDemoModal">
           <!-- button trigger live demo modal -->
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Create a new post
             </button>
 
@@ -54,7 +53,7 @@
 
                   <!-- separate container for camera and map icons -->               
                   <div class="container">
-                    <div  id="iconButtons">
+                    <div id="iconButtons">
                       <button type="button" class="btn btn-outline-secondary">
                         <i class="fas fa-camera"></i>
                       </button>
@@ -71,14 +70,14 @@
                   </div>
                 </div>
               </div>
-          </button>
+            </div>
         </div>
 
         <!-- Dropdown button (cog) begins here -->
-        <li class="nav-item dropdown">
+        <div class="nav-item dropdown">
           <button class="btn btn-secondary" type="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fas fa-cog"></i>
+            <span class="fas fa-cog"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -89,7 +88,7 @@
             </li>
             <li><a class="dropdown-item logOut" href="#">Logout</a></li>
           </ul>
-        </li>
+        </div>
         <!-- Dropdown ends here -->
       </nav>
      
@@ -221,7 +220,8 @@
 
     </div>
   </div>
-    
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>    
 </body>
 
 </html>
